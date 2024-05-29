@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { Pagination } from '@mui/material'
+import Loader from './Loader'
 import {Box,Typography,Stack} from '@mui/material'
 import ExerciseCard from './ExerciseCard'
 import { exerciseOptions,fetchData } from '../utils/fetchData'
@@ -58,9 +59,9 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
      
      >
 
-      {currentExercises.map((exercise,index)=>(
+      { currentExercises.length ? currentExercises.map((exercise,index)=>(
       <ExerciseCard key={index} exercise={exercise}/>
-      ))}
+      )): <Loader/> }
      </Stack>
      <Stack mt='100px' alignItems='center'>
       {exercises.length>9 && (
