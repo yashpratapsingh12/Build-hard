@@ -9,7 +9,9 @@ const Footer = () => {
     <Box mt ='80px' bgcolor='#fff3f4'>
       <Stack gap ='40px' alignItems='center' px='40px' pt='24px'> 
       <img src={Logo} alt='logo' width='80px' height='40px'/>
-      <Typography variant ='h5' pb= '20px'>
+      <Typography variant ='h5' pb= '20px'
+      sx={{fontSize:{lg:"30px",xs:"15px"}}}
+      >
         Made with ❤️ by Yash pratap singh
       </Typography>
 

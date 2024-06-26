@@ -32,6 +32,7 @@ const Detail = ({exerciseDetail}) => {
      <Stack sx={{gap:{lg:'35px',xs:'20px'}}}>
       <Typography variant='h3'>
         {name}
+    
 
       </Typography>
       <Typography variant='h6'>

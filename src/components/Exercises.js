@@ -16,10 +16,27 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
 
   const currentExercises= exercises.slice(indexOfFirstExercise,indexOfLastExercise)
 
+
  const paginate =(e,value)=>{
   setCurrentPage(value);
 
-  window.scrollTo({top:1800,behavior:'smooth'})
+  if(window.innerWidth>"1200"){
+
+  
+
+    window.scrollTo({top:1700,behavior:'smooth'})
+  }
+  else {
+    console.log(window.innerWidth)
+    window.scrollTo({top:1240,behavior:'smooth'})
+
+  }
+  // else{
+  //   window.scrollTo({top:1240,behavior:'smooth'})
+
+
+  // }
+
 
  }
  useEffect(()=>{

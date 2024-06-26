@@ -67,17 +67,36 @@ body {
     width: 400px;
     height: 445px;
     background: #fff;
-    border-top: 4px solid #FF2625;
+   
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+  
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out; 
+  }
+
+  
+  .exercise-carD {
+    width: 400px;
+    height: 445px;
+    background: #fff;
+  
     border-bottom-left-radius: 20px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding-bottom: 10px;
+  
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
   }
-  
+
+
+
   .exercise-card img {
     height: 326px;
   }
@@ -111,7 +130,7 @@ body {
       width: 300px;
       height: 300px;
     }
-  
+
   
     .react-horizontal-scrolling-menu--scroll-container {
       width: 500px;
@@ -130,7 +149,7 @@ body {
       width: 320px;
     }
   
-    .exercise-video {
+    .exercise-videos {
       width: 320px;
       height: 300px;
     }
