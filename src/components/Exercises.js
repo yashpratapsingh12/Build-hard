@@ -7,7 +7,7 @@ import ExerciseCard from './ExerciseCard'
 import { exerciseOptions,fetchData } from '../utils/fetchData'
 
 const Exercises = ({exercises,setExercises,bodyPart}) => {
-  // console.log(exercises);
+
   const[currentPage,setCurrentPage]= useState(1);
   const exercisesPerPage=9;
 
@@ -76,7 +76,7 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
       <ExerciseCard key={index} exercise={exercise}/>
       )): <Loader/> }
      </Stack>
-     <Stack mt='100px' alignItems='center'>src={exercise.gifUrl}
+     <Stack mt='100px' alignItems='center'>src={exercises.gifUrl}
       {exercises.length>9 && (
        <Pagination
        color='standard'
