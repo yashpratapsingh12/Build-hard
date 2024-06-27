@@ -31,11 +31,7 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
     window.scrollTo({top:1240,behavior:'smooth'})
 
   }
-  // else{
-  //   window.scrollTo({top:1240,behavior:'smooth'})
 
-
-  // }
 
 
  }
@@ -80,7 +76,7 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
       <ExerciseCard key={index} exercise={exercise}/>
       )): <Loader/> }
      </Stack>
-     <Stack mt='100px' alignItems='center'>
+     <Stack mt='100px' alignItems='center'>src={exercise.gifUrl}
       {exercises.length>9 && (
        <Pagination
        color='standard'

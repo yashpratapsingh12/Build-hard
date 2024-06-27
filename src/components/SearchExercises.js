@@ -50,7 +50,7 @@ const SearchExercises=({exercises,setExercises,bodyPart,setBodyPart})=>{
             setSearch("");
             setExercises(searchedExercises);
 
-            // console.log(exercises);
+       
 
             
 
@@ -87,7 +87,7 @@ const SearchExercises=({exercises,setExercises,bodyPart,setBodyPart})=>{
             Awesome exercises you <br/>
             should know 
         </Typography>
-            {/* <Link to={`/exercises/${exercises.id}`}> */}
+         
         <Box position="relative" mb="72px">
             <TextField
             sx={{
@@ -138,7 +138,7 @@ const SearchExercises=({exercises,setExercises,bodyPart,setBodyPart})=>{
 
             </Button>
         </Box>
-            {/* </Link> */}
+     
         <Box sx={{position:"relative",width:"100%",p:"20px"}}>
 
             <HorizontalScrollbar data={bodyParts}
