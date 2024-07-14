@@ -76,7 +76,7 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
       <ExerciseCard key={index} exercise={exercise}/>
       )): <Loader/> }
      </Stack>
-     <Stack mt='100px' alignItems='center'>src={exercises.gifUrl}
+     <Stack mt='100px' alignItems='center'>
       {exercises.length>9 && (
        <Pagination
        color='standard'
